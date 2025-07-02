@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Plage Privée</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('https://i.ibb.co/9HHbfzyL/img1.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 60px 20px 100px;
+      min-height: 100vh;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 48px;
+      font-family: 'Pacifico', cursive;
+      margin-bottom: 40px;
+      color: #ffe;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .menu-section {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .block {
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #333;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .block h2 {
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #007b5e;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dotted #999;
+      padding: 5px 0;
+      font-size: 16px;
+    }
+
+    .spacer {
+      visibility: hidden;
+    }
+
+    .footer-logo {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+      font-family: 'Pacifico', cursive;
+      padding: 10px 20px;
+      border-radius: 15px;
+      font-size: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .footer-logo::after {
+      content: " ★★★★";
+      color: gold;
+      font-size: 22px;
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-section {
+        grid-template-columns: 1fr;
+      }
+      .footer-logo {
+        position: relative;
+        margin-top: 40px;
+        text-align: center;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="title">Menu - Plage Privée</div>
+    <div class="menu-section">
+      <div class="spacer"></div>
+      <div class="block">
+        <h2>CHEESE BURGER</h2>
+        <div class="item"><span>Simple</span><span>250 DA</span></div>
+        <div class="item"><span>Double</span><span>350 DA</span></div>
+        <div class="item"><span>Triple</span><span>450 DA</span></div>
+      </div>
+
+      <div class="block">
+        <h2>PIZZA COUVERTE</h2>
+        <div class="item"><span>Tranche pizza v.h</span><span>200 DA</span></div>
+        <div class="item"><span>Tranche pizza thon</span><span>150 DA</span></div>
+      </div>
+      <div class="spacer"></div>
+
+      <div class="spacer"></div>
+      <div class="block">
+        <h2>SANDWICH 3 FROMAGES</h2>
+        <div class="item"><span>Poulet</span><span>400 DA</span></div>
+        <div class="item"><span>Viande Hachée</span><span>500 DA</span></div>
+      </div>
+
+      <div class="block">
+        <h2>SUPPLÉMENT</h2>
+        <div class="item"><span>Gouda</span><span>100 DA</span></div>
+        <div class="item"><span>Gruyère</span><span>100 DA</span></div>
+        <div class="item"><span>Edam</span><span>100 DA</span></div>
+        <div class="item"><span>Rôti</span><span>100 DA</span></div>
+      </div>
+      <div class="spacer"></div>
+
+      <div class="spacer"></div>
+      <div class="block">
+        <h2>BOISSON</h2>
+        <div class="item"><span>Canette</span><span>100 DA</span></div>
+        <div class="item"><span>Eau minéral pm</span><span>40 DA</span></div>
+        <div class="item"><span>Eau minéral gm</span><span>80 DA</span></div>
+        <div class="item"><span>Jus de fruit</span><span>100 DA</span></div>
+        <div class="item"><span>Thé glacé</span><span>150 DA</span></div>
+      </div>
+
+      <div class="block">
+        <h2>BOISSONS CHAUDES</h2>
+        <div class="item"><span>Café expresso</span><span>250 DA</span></div>
+        <div class="item"><span>Double expresso</span><span>300 DA</span></div>
+        <div class="item"><span>Cappuccino</span><span></span></div>
+        <div class="item"><span>Thé ou infusion</span><span>150 DA</span></div>
+        <div class="item"><span>Chocolat chaud</span><span>200 DA</span></div>
+        <div class="item"><span>Café au lait</span><span>200 DA</span></div>
+      </div>
+      <div class="spacer"></div>
+
+      <div class="spacer"></div>
+      <div class="block">
+        <h2>COCKTAIL</h2>
+        <div class="item"><span>Virgin Mojito</span><span>400 DA</span></div>
+        <div class="item"><span>Tropical (fruits de saison)</span><span>300 DA</span></div>
+      </div>
+    </div>
+
+    <div class="footer-logo">Hotel Atlantid</div>
+  </div>
+</body>
+</html>
